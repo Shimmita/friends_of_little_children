@@ -2,6 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { Target, Eye, ShieldAlert } from 'lucide-react';
+import whoWe from "../../public/images/who_we.jpeg";
 
 export default function AboutPreview() {
   return (
@@ -13,7 +14,7 @@ export default function AboutPreview() {
             <div className="absolute -inset-4 bg-amber-500/10 rounded-3xl -rotate-2 z-0" />
             <div className="relative rounded-2xl overflow-hidden shadow-2xl z-10 aspect-4/3 lg:aspect-square">
               <Image 
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800"
+                src={whoWe}
                 alt="Women learning skills together"
                 fill
                 className="object-cover"

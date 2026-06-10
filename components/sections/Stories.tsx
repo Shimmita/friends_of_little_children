@@ -21,7 +21,7 @@ export default function Stories() {
               <Quote className="absolute top-6 right-6 w-12 h-12 text-emerald-700/5 stroke-2 shrink-0" />
               <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl relative overflow-hidden shrink-0 shadow-md border-2 border-white">
                 <img 
-                  src={item.image} 
+                  src={item.image.src} 
                   alt={item.name}
                   className="w-full h-full object-cover"
                 />

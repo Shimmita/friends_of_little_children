@@ -4,6 +4,7 @@
 import Navbar from '@/components/layout/Navbar';
 import Hero from '@/components/sections/Hero';
 import AboutPreview from '@/components/sections/AboutPreview';
+import Founder from '@/components/sections/Founder'; // <-- Import added here
 import Programs from '@/components/sections/Programs';
 import Impact from '@/components/sections/Impact';
 import Stories from '@/components/sections/Stories';
@@ -17,6 +18,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <Founder /> 
         <AboutPreview />
         <Programs />
         <Impact />

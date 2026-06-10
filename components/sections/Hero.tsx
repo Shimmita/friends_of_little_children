@@ -2,13 +2,14 @@
 import React from 'react';
 import Image from 'next/image';
 import { ArrowRight, ShieldCheck } from 'lucide-react';
+import childrenAudience from "../../public/images/kindergaten.jpeg"
 
 export default function Hero() {
   return (
     <section className="relative min-h-[85vh] flex items-center bg-gray-900 overflow-hidden">
       <div className="absolute inset-0 z-0 opacity-40 mix-blend-multiply">
         <Image
-          src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=1600"
+          src={childrenAudience}
           alt="Happy community children laughing together"
           fill
           priority
@@ -36,14 +37,7 @@ export default function Hero() {
           <a href="#contact" className="px-8 py-4 bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-xs text-white font-bold rounded-xl transition-all text-center">
             Partner With Us
           </a>
-          <div className="sm:ml-6 flex items-center justify-center sm:justify-start -space-x-3">
-            {[1, 2, 3].map((n) => (
-              <div key={n} className="w-10 h-10 rounded-full border-2 border-gray-900 bg-gray-700 relative overflow-hidden">
-                <Image src={`https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=100&index=${n}`} fill alt="Supporter thumbnail" />
-              </div>
-            ))}
-            <span className="text-xs font-semibold text-gray-300 ml-4">Trusted by 20+ Partners</span>
-          </div>
+         
         </div>
       </div>
     </section>

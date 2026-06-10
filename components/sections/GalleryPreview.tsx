@@ -1,6 +1,7 @@
 "tsx"
 import React from 'react';
 import { galleryItems } from '@/data/siteData';
+import Image from 'next/image';
 
 export default function GalleryPreview() {
   return (
@@ -22,9 +23,10 @@ export default function GalleryPreview() {
           {galleryItems.map((item, index) => (
             <div key={index} className="bg-white rounded-2xl overflow-hidden border border-gray-100 group shadow-xs hover:shadow-lg transition-all duration-300">
               <div className="relative h-56 w-full bg-gray-200 overflow-hidden">
-                <img 
+                <Image
                   src={item.image} 
                   alt={item.title} 
+                  fill
                   className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
